@@ -3,8 +3,8 @@ pipeline {
 	    // agent any
 
 		agent {
-        dockerContainer ( image 'maven:3.6.3')
-              }
+        dockerContainer(image: 'maven:3.6.3', reuseNode: true)
+    }
 	    stages {
 			stage ('Build') {
 				steps {
