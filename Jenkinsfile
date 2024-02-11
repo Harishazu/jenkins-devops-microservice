@@ -20,7 +20,7 @@ pipeline {
 			}
 		}
 		
-		 post { 
+	    post { 
 			always {
 			  echo 'Im a bad ass'
 			}
