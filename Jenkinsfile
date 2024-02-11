@@ -27,7 +27,7 @@ pipeline {
 			 success {
 				 echo 'When is our marriage'
 			 }
-			 success {
+			 failure {
 				 echo 'Success or failure'
 			 }
 		}
