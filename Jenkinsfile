@@ -2,13 +2,10 @@ pipeline {
 
 	    // agent any
 
-		agent {
-        dockerContainer(image: 'maven:3.6.3', reuseNode: true)
-    }
+		agent any
 	    stages {
 			stage ('Build') {
 				steps {
-				   sh 'mvn --version'
                    echo "Build" 
 				}
 			}
