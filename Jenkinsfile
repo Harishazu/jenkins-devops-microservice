@@ -18,6 +18,16 @@ pipeline {
                 echo "Integration Test"
 				}
 			}
+		} post { 
+			always {
+			  echo 'Im a bad ass'
+			}
+			 success {
+				 echo 'When is our marriage'
+			 }
+			 success {
+				 echo 'Success or failure'
+			 }
 		}
 	    
 	}
