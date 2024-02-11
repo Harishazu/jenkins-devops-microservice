@@ -2,11 +2,8 @@ pipeline {
 
 	    // agent any
 
-		agent { 
-			docker { image 'maven:3.6.3'} 
-			  }
-
-		stages {
+		agent { docker { image 'maven:3.6.3'} }
+	    stages {
 			stage ('Build') {
 				steps {
 				   sh 'mvn --version'
@@ -31,7 +28,7 @@ pipeline {
 			  echo 'Im a bad ass'
 			}
 			 success {
-				 echo 'When is our marriage'
+				 echo 'Should start when Im a bad ass'
 			 }
 			 failure {
 				 echo 'Success or failure'
